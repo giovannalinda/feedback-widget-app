@@ -3,6 +3,8 @@ import { TouchableOpacity } from 'react-native'
 import { ChatTeardropDots } from 'phosphor-react-native'
 import BottomSheet from '@gorhom/bottom-sheet'
 
+import { Options } from '../Options'
+
 import { styles } from './styles'
 import { theme } from '../../theme'
 
@@ -32,6 +34,7 @@ export function Widget() {
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
+        <Options />
 
       </BottomSheet>
     </>
