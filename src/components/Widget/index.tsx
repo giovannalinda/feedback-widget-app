@@ -3,12 +3,13 @@ import { TouchableOpacity } from 'react-native'
 import { ChatTeardropDots } from 'phosphor-react-native'
 import BottomSheet from '@gorhom/bottom-sheet'
 
+import { Form } from '../Form'
+import { Options } from '../Options'
+import { Success } from '../Success'
+
+
 import { feedbackTypes } from '../../utils/feedbackTypes'
 import { theme } from '../../theme'
-import { Form } from '../Form'
-// import { Options } from '../Options'
-
-
 import { styles } from './styles'
 
 export type FeedbackType = keyof typeof feedbackTypes
@@ -39,9 +40,7 @@ export function Widget() {
         backgroundStyle={styles.modal}
         handleIndicatorStyle={styles.indicator}
       >
-        <Form 
-          feedbackType="BUG"
-        />
+        <Success />
 
       </BottomSheet>
     </>
